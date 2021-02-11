@@ -13,19 +13,12 @@
     flex-wrap: nowrap;
     margin-bottom: 5px;
   }
-  .flex-container1 {
-    flex-direction: row;
-    display: inline;
-    flex-wrap: nowrap;
-    margin-bottom: 5px;
-  }
+
   body{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
+    margin-left: 30px;
   }
   #next{
-    width: 100px;
+    width: 80px;
     height: 50px;
     background-color: green;
     color:white;
@@ -35,10 +28,10 @@
   #root{
     display: block;
   }
-  #div0{
+  #Logo{
     display:block;
   }
-  #div1{
+  #Game{
     display:none;
   }
   #footer{
@@ -49,16 +42,56 @@
   }
   #gameover{
     display: none;
-    width: 50px;
-    white-space: pre-line;
   }
   text {
     font-size: 25px;
-    color: blue;
+    color:green;
 }
 #lost{
   display: none;
 }
 #levelinterval{
   display:none;
+}
+p{
+  font-size: 30px;
+  color: green;
+  font-style: italic;
+}
+.flex-container1{
+  display: flex;
+  flex-direction: row;
+}
+.flex-container2{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.flex-container3{
+  display: flex;
+  flex-direction: column;
+}
+.flex-container4{
+  display: flex;
+  flex-direction: row;
+}
+.flex-container5{
+  display: flex;
+  flex-direction: column;
+}
+#timer{
+  color:indigo;
+}
+.center {
+  display: block;
+  margin-left: 50px;
+  margin-right: 20px;
+  width: 40%;
+}
+.center1 {
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

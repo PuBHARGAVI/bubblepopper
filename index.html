@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubble Popper</title>
     <link rel="stylesheet" href="game.css">
-    <script language="javascript" type="text/javascript" src="app.js"></script>
+    <script language="javascript" type-="text/javascript" src="app.js"></script>    
 </head>
 <body>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <source src="assets/bubblesound.mp3" type="audio/mp3" id="audio">
-  <div id="div0">
-    <img src="assets/bubble.jfif" alt="Logo">
-    <button id="next" onclick="start()">Start</button>
+  <div id="Logo">
+    <img src="assets/bubble.jfif" alt="Logo" class="center1">
+    <p style="font-style: italic;color:green;font-size: 30px;">Bubble popper game consists of three levels and each level consists of 5 words and you need to reach the target to move to next level.All the best<br></p>
+    <button id="next" onclick="startgame()">Start</button>
   </div>
-  <div id="div1">
-      <text id="level">Level 1</text> 
-      <text>Score:</text>
+  <div id="Game" >
+      <p id="level" style="text-align:center">Level 1</p> 
+      <text style="font-style: italic;">Score:</text>
       <text id="score">0</text>
-      <div id="main">
+      <div class="flex-container1">
+        <div class="flex-container2">
       <div class="flex-container">
         <div><input type="image" src="assets/h.png" id="e1" onclick="hidebubble(this.id)" value="h"/></div>
         <div><input type="image" src="assets/l.png" id="e2" onclick="hidebubble(this.id)" value="l"/></div>
@@ -66,21 +69,30 @@
         <div><input type="image" src="assets/g.png" id="e35" onclick="hidebubble(this.id)" value="g"/></div>
         <div><input type="image" src="assets/m.png" id="e36" onclick="hidebubble(this.id)" value="m"/></div>  
       </div>
-        <text>Hunt_the_word</text> 
-        <text id="text" style="font-size: 30px; color: #000;">bhargavi</text>
-        <button id="edit" onclick="editcharacter()">Edit</button>
+    </div>
+    <div class="flex-container3">
+        <p>Hunt the word:
+        <text id="text" style="font-size: 30px; color:blueviolet">bhargavi</text></p>
+        <button id="undo" style="width: 60px;height: 40px; color:white;background-color: green; font-size: medium;" onclick="undocharacter()">undo</button>
+        <p id="status">Welcome</p>
       </div>
+    </div>
   </div>
-    <text id="lost">You_didn't_reach_the_target.Better_luck_nexttime_and_have_fun</text>
+    <p id="lost">You didn't reach the target.<br><br>Better luck nexttime and have fun</p>
   <div id="gameover">
-        <img src="assets/gameover.jfif" alt="gameover">
-        <text>Your_score_is:</text>
+    <div class="flex-container4">
+        <img src="assets/gameover.jfif" alt="gameover" class="center">
+        <div class="flex-container5">
+        <p>Your score is:</p>
         <text id="over">0</text><br>
-        Thank_you_for_playing.<br> Play_again_and_have_more_fun
+        <p>Thank you for playing</p> 
+        <p>Play again and have more fun.</p>
+      </div>
+    </div>
       </div>
   <div id="levelinterval">
-    Your next level starts with in 5 seconds<br>
-    <text id="timer">15</text>
+    <p>Your next level starts with in 3 seconds</p>
+    <p id="timer">15</p>
   </div>
 </body>
 </html>
