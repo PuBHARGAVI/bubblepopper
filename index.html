@@ -14,67 +14,73 @@
     <button id="next" onclick="start()">Start</button>
   </div>
   <div id="div1">
-      <p id="level">Level 1</p> 
-      <p>Score:</p>
-      <p id="score">0</p>
+      <text id="level">Level 1</text> 
+      <text>Score:</text>
+      <text id="score">0</text>
       <div id="main">
       <div class="flex-container">
-        <div><input type="image" src="assets/h.png" id="e1" onclick="hide(this.id)" value="h"/></div>
-        <div><input type="image" src="assets/l.png" id="e2" onclick="hide(this.id)" value="l"/></div>
-        <div><input type="image" src="assets/n.png" id="e3" onclick="hide(this.id)" value="n"/></div>  
-        <div><input type="image" src="assets/p.png" id="e4" onclick="hide(this.id)" value="p"/></div>
-        <div><input type="image" src="assets/v.png" id="e5" onclick="hide(this.id)" value="v"/></div>
-        <div><input type="image" src="assets/e.png" id="e6" onclick="hide(this.id)" value="e"/></div>  
+        <div><input type="image" src="assets/h.png" id="e1" onclick="hidebubble(this.id)" value="h"/></div>
+        <div><input type="image" src="assets/l.png" id="e2" onclick="hidebubble(this.id)" value="l"/></div>
+        <div><input type="image" src="assets/n.png" id="e3" onclick="hidebubble(this.id)" value="n"/></div>  
+        <div><input type="image" src="assets/p.png" id="e4" onclick="hidebubble(this.id)" value="p"/></div>
+        <div><input type="image" src="assets/v.png" id="e5" onclick="hidebubble(this.id)" value="v"/></div>
+        <div><input type="image" src="assets/e.png" id="e6" onclick="hidebubble(this.id)" value="e"/></div>  
       </div>
       <div class="flex-container">
-        <div><input type="image" src="assets/c.png" id="e7" onclick="hide(this.id)" value="c"/></div>
-        <div><input type="image" src="assets/m.png" id="e8" onclick="hide(this.id)" value="m"/></div>
-        <div><input type="image" src="assets/a.png" id="e9" onclick="hide(this.id)" value="a"/></div>  
-        <div><input type="image" src="assets/t.png" id="e10" onclick="hide(this.id)" value="t"/></div>
-        <div><input type="image" src="assets/u.png" id="e11" onclick="hide(this.id)" value="u"/></div>
-        <div><input type="image" src="assets/b.png" id="e12" onclick="hide(this.id)" value="b"/></div>  
+        <div><input type="image" src="assets/c.png" id="e7" onclick="hidebubble(this.id)" value="c"/></div>
+        <div><input type="image" src="assets/m.png" id="e8" onclick="hidebubble(this.id)" value="m"/></div>
+        <div><input type="image" src="assets/a.png" id="e9" onclick="hidebubble(this.id)" value="a"/></div>  
+        <div><input type="image" src="assets/t.png" id="e10" onclick="hidebubble(this.id)" value="t"/></div>
+        <div><input type="image" src="assets/u.png" id="e11" onclick="hidebubble(this.id)" value="u"/></div>
+        <div><input type="image" src="assets/b.png" id="e12" onclick="hidebubble(this.id)" value="b"/></div>  
       </div>
       <div class="flex-container">
-        <div><input type="image" src="assets/d.png" id="e13" onclick="hide(this.id)" value="d"/></div>
-        <div><input type="image" src="assets/o.png" id="e14" onclick="hide(this.id)" value="o"/></div>
-        <div><input type="image" src="assets/i.png" id="e15" onclick="hide(this.id)" value="i"/></div>  
-        <div><input type="image" src="assets/q.png" id="e16" onclick="hide(this.id)" value="q"/></div>
-        <div><input type="image" src="assets/z.png" id="e17" onclick="hide(this.id)" value="z"/></div>
-        <div><input type="image" src="assets/v.png" id="e18" onclick="hide(this.id)" value="v"/></div>  
+        <div><input type="image" src="assets/d.png" id="e13" onclick="hidebubble(this.id)" value="d"/></div>
+        <div><input type="image" src="assets/o.png" id="e14" onclick="hidebubble(this.id)" value="o"/></div>
+        <div><input type="image" src="assets/i.png" id="e15" onclick="hidebubble(this.id)" value="i"/></div>  
+        <div><input type="image" src="assets/q.png" id="e16" onclick="hidebubble(this.id)" value="q"/></div>
+        <div><input type="image" src="assets/z.png" id="e17" onclick="hidebubble(this.id)" value="z"/></div>
+        <div><input type="image" src="assets/v.png" id="e18" onclick="hidebubble(this.id)" value="v"/></div>  
       </div>
       <div class="flex-container">
-        <div><input type="image" src="assets/i.png" id="e19" onclick="hide(this.id)" value="i"/></div>
-        <div><input type="image" src="assets/r.png" id="e20" onclick="hide(this.id)" value="r"/></div>
-        <div><input type="image" src="assets/x.png" id="e21" onclick="hide(this.id)" value="x"/></div>  
-        <div><input type="image" src="assets/a.png" id="e22" onclick="hide(this.id)" value="a"/></div>
-        <div><input type="image" src="assets/t.png" id="e23" onclick="hide(this.id)" value="t"/></div>
-        <div><input type="image" src="assets/w.png" id="e24" onclick="hide(this.id)" value="w"/></div>  
+        <div><input type="image" src="assets/i.png" id="e19" onclick="hidebubble(this.id)" value="i"/></div>
+        <div><input type="image" src="assets/r.png" id="e20" onclick="hidebubble(this.id)" value="r"/></div>
+        <div><input type="image" src="assets/x.png" id="e21" onclick="hidebubble(this.id)" value="x"/></div>  
+        <div><input type="image" src="assets/a.png" id="e22" onclick="hidebubble(this.id)" value="a"/></div>
+        <div><input type="image" src="assets/t.png" id="e23" onclick="hidebubble(this.id)" value="t"/></div>
+        <div><input type="image" src="assets/w.png" id="e24" onclick="hidebubble(this.id)" value="w"/></div>  
       </div>
       <div class="flex-container">
-        <div><input type="image" src="assets/l.png" id="e25" onclick="hide(this.id)" value="l"/></div>
-        <div><input type="image" src="assets/h.png" id="e26" onclick="hide(this.id)" value="h"/></div>
-        <div><input type="image" src="assets/n.png" id="e27" onclick="hide(this.id)" value="n"/></div>  
-        <div><input type="image" src="assets/x.png" id="e28" onclick="hide(this.id)" value="x"/></div>
-        <div><input type="image" src="assets/s.png" id="e29" onclick="hide(this.id)" value="s"/></div>
-        <div><input type="image" src="assets/j.png" id="e30" onclick="hide(this.id)" value="j"/></div>  
+        <div><input type="image" src="assets/l.png" id="e25" onclick="hidebubble(this.id)" value="l"/></div>
+        <div><input type="image" src="assets/h.png" id="e26" onclick="hidebubble(this.id)" value="h"/></div>
+        <div><input type="image" src="assets/n.png" id="e27" onclick="hidebubble(this.id)" value="n"/></div>  
+        <div><input type="image" src="assets/x.png" id="e28" onclick="hidebubble(this.id)" value="x"/></div>
+        <div><input type="image" src="assets/s.png" id="e29" onclick="hidebubble(this.id)" value="s"/></div>
+        <div><input type="image" src="assets/j.png" id="e30" onclick="hidebubble(this.id)" value="j"/></div>  
       </div>
       <div class="flex-container">
-        <div><input type="image" src="assets/e.png" id="e31" onclick="hide(this.id)" value="e"/></div>
-        <div><input type="image" src="assets/y.png" id="e32" onclick="hide(this.id)" value="y"/></div>
-        <div><input type="image" src="assets/k.png" id="e33" onclick="hide(this.id)" value="k"/></div>  
-        <div><input type="image" src="assets/f.png" id="e34" onclick="hide(this.id)" value="f"/></div>
-        <div><input type="image" src="assets/g.png" id="e35" onclick="hide(this.id)" value="g"/></div>
-        <div><input type="image" src="assets/m.png" id="e36" onclick="hide(this.id)" value="m"/></div>  
+        <div><input type="image" src="assets/e.png" id="e31" onclick="hidebubble(this.id)" value="e"/></div>
+        <div><input type="image" src="assets/y.png" id="e32" onclick="hidebubble(this.id)" value="y"/></div>
+        <div><input type="image" src="assets/k.png" id="e33" onclick="hidebubble(this.id)" value="k"/></div>  
+        <div><input type="image" src="assets/f.png" id="e34" onclick="hidebubble(this.id)" value="f"/></div>
+        <div><input type="image" src="assets/g.png" id="e35" onclick="hidebubble(this.id)" value="g"/></div>
+        <div><input type="image" src="assets/m.png" id="e36" onclick="hidebubble(this.id)" value="m"/></div>  
       </div>
-        <p>Hunt_the_word</p> 
-        <p id="text" style="font-size: 30px; color: #000;">bhargavi</p>
+        <text>Hunt_the_word</text> 
+        <text id="text" style="font-size: 30px; color: #000;">bhargavi</text>
+        <button id="edit" onclick="editcharacter()">Edit</button>
       </div>
   </div>
+    <text id="lost">You_didn't_reach_the_target.Better_luck_nexttime_and_have_fun</text>
   <div id="gameover">
         <img src="assets/gameover.jfif" alt="gameover">
-        <p>Your score is:</p>
-        <p id="over">0</p>
-        Thank you for playing Play again an have more fun
+        <text>Your_score_is:</text>
+        <text id="over">0</text><br>
+        Thank_you_for_playing.<br> Play_again_and_have_more_fun
       </div>
+  <div id="levelinterval">
+    Your next level starts with in 5 seconds<br>
+    <text id="timer">15</text>
+  </div>
 </body>
 </html>
